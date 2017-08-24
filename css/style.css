@@ -1,0 +1,40 @@
+body 
+{
+  background-color: #000000;
+  color: lightgrey;
+  font-size: 28px;
+}
+
+#container 
+{
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+#board
+{
+  width:900px;
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align:center;
+  font-size:54px;
+  min-height:60px;
+}
+
+#gallows
+{
+  float:left;
+  width:450px;
+  text-align:center;
+  min-height:280px;   /*after change picture want to avoid 'jumping' of screen for time of loading picture -> annoying! */
+}
+
+#alphabet
+{
+  float:left;
+  width:450px;
+  text-align:center;
+  min-height:280px;
+}
