@@ -1,4 +1,4 @@
-/* global litery */
+/* global letters, lenght */
 
 var pass = "Trening czyni mistrza";
 pass = pass.toUpperCase();
@@ -65,7 +65,9 @@ function start()
     
     for (i=0; i<=34; i++)
     {
-        div_content = div_content + '<div class = "letter">'+letters[i]+'</div>';
+        var element = "lit" + i;
+        
+        div_content = div_content + '<div class = "letter" onclick="check('+i+')" id ="'+element+'">'+letters[i]+'</div>';
         if((i+1) % 7 == 0)div_content = div_content + '<div style="clear:both;"></div>';
     }
     
@@ -75,4 +77,25 @@ function start()
     
     show_pass();
     
+}
+
+String.prototype.setSign = function (position, sign)
+{
+    if (position > this.length - 1) return this.toString();
+    else return this.substr(0, position) + sign + this.substr(position + 1);
+}
+
+
+function check(nr)
+{    
+  for (i=0; i<lenght; i++)
+  {
+    if(pass.charAt(i)== letters[nr])
+    {
+        pass1 = pass1.setSign(i, letters[nr]);
+    }
+  }
+  
+    show_pass();
+  
 }
