@@ -3,7 +3,7 @@ body
   background-color: #000000;
   color: lightgrey; 
   font-size: 28px;
-  font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono', serif;
   font-weight: 700;
 }
 
@@ -61,4 +61,17 @@ body
     background-color: #222222;
     color: white;
     border: 3px solid white;
+}
+
+.reset
+{
+    color: green;
+    cursor: pointer;
+    font-size: 48px;
+
+}
+
+.reset:hover
+{
+    color: white;
 }
