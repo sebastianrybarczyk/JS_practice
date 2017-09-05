@@ -1,6 +1,6 @@
 
 var pass_array = new Array(5);
-pass_array[0] = "Kocham Taleczke";
+pass_array[0] = "Każdy kija ma dwa końce";
 pass_array[1] = "Trening czyni mistrza";
 pass_array[2] = "Bez pracy nie ma kołaczy";
 pass_array[3] = "Czym skorupka za młodu nasiąknie na starość trąci";
